@@ -28,6 +28,10 @@ Route::get('/product/cloth', 'FrontController@cloth');
 
 Route::get('/product/cloth/{id}', 'FrontController@clothInfo');
 
+Route::get('/product/upwear', 'FrontController@upwear');
+Route::get('/product/pants', 'FrontController@pants');
+Route::get('/product/sox', 'FrontController@sox');
+
 Route::get('/product/sport', 'FrontController@sport');
 
 Route::get('/product/sport/{id}', 'FrontController@sportInfo');

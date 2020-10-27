@@ -90,20 +90,24 @@
         z-index: 0;
     }
 
-    #bottom_nav{
+    #index_banner #bottom_nav{
+        display: none;
+    }
+
+    /* #bottom_nav{
         position: absolute;
         top: 80px;
         left: 0;
-    }
+    } */
 
-    
+
     #Hamburger{
         display: block!important ;
-        
-       
+
+
 
     }
-  
+
 
 
 
@@ -131,13 +135,13 @@
         position: absolute;
         top:50%;
         right: 20%;
-  
+
     }
 
     #all_footer #right_footer{
         width: 100%;
         height: 250px;
-        
+
 
     }
     #all_footer #right_footer h3{
@@ -156,11 +160,15 @@
         margin:0;
     }
 
-    
+
 }
 
 
 @media (max-width: 768px){
+
+    #index_banner #bottom_nav{
+        display: none;
+    }
 
 
 
@@ -193,7 +201,7 @@
         width: 100%;
         height: 500px;
     }
-    
+
 
 
     #sectionmaue #rightmaue .textbox{
@@ -215,7 +223,9 @@
 
 @media (max-width: 576px){
 
-    
+    #index_banner #bottom_nav{
+        display: none;
+    }
 
     #all_footer #left_footer #leftfooter_content .row a{
         display: flex;
@@ -223,23 +233,23 @@
         width: 30px;
     }
 
-  
+
     #all_footer #right_footer #rightfooter_content{
         height: 100px;
-        
+
     }
 
 
-    
+
     #all_footer #right_footer #rightfooter_content #row_height{
         height: 100px;
-        
+
     }
 
     #all_footer #right_footer #rightfooter_content .continer #row_height a{
         width: 50px;
         height: 50px;
-        
+
     }
 
     #index_banner #bottom_nav{
@@ -274,7 +284,7 @@
 
     }
 
-    #all_footer #right_footer #rightfooter_content #usphoto .photo{ 
+    #all_footer #right_footer #rightfooter_content #usphoto .photo{
         height: 20px;
     }
 

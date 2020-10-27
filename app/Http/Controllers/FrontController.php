@@ -76,6 +76,55 @@ class FrontController extends Controller
         return view('front.product_list', compact('productclasses'));
     }
 
+    public function upwear(){
+
+        $productclass = ProductMainClass::find(1)->productClass->all();
+
+        $productclasses[0] = $productclass[0];
+
+        // dd($productclass, $productclasses);
+
+        // $productclasses = ProductClass::find(1);
+        // dd($productclasses[0]->productType[0]->product[0]->productMainImg[0]->imageUrl);
+        // dd($productclasses);
+
+        return view('front.product_list', compact('productclasses'));
+    }
+
+    public function pants(){
+
+        $productclass = ProductMainClass::find(1)->productClass->all();
+
+        $productclasses[0] = $productclass[1];
+
+        // dd($productclass, $productclasses);
+
+        // $productclasses = ProductClass::find(1);
+        // dd($productclasses[0]->productType[0]->product[0]->productMainImg[0]->imageUrl);
+        // dd($productclasses);
+
+        return view('front.product_list', compact('productclasses'));
+    }
+
+    public function sox(){
+
+        $productclass = ProductMainClass::find(1)->productClass->all();
+
+        $productclasses[0] = $productclass[2];
+
+        // dd($productclass, $productclasses);
+
+        // $productclasses = ProductClass::find(1);
+        // dd($productclasses[0]->productType[0]->product[0]->productMainImg[0]->imageUrl);
+        // dd($productclasses);
+
+        return view('front.product_list', compact('productclasses'));
+    }
+
+
+
+
+
     public function clothInfo($id){
 
        $product = Product::find($id);

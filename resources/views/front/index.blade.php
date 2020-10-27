@@ -4,13 +4,15 @@
     <title>首頁</title>
 
     <link rel="stylesheet" href="/css/index/index sass.css">
-    {{-- <link rel="stylesheet" href="/js/index/nav.js"> --}}
+    {{--
+    <link rel="stylesheet" href="/js/index/nav.js"> --}}
     <link rel="stylesheet" href="/css/index/rwd.css">
     <link rel="stylesheet" href="/css/index/nav.css">
 
 
 
-    {{-- <link rel="stylesheet" href="/css/index/index sass.css">
+    {{--
+    <link rel="stylesheet" href="/css/index/index sass.css">
     <link rel="stylesheet" href="/js/index/nav.js">
     <link rel="stylesheet" href="/css/index/rwd.css">
     <link rel="stylesheet" href="/css/index/nav.css">
@@ -27,13 +29,12 @@
 
     <style>
         /* .swiper-container{
-            margin-top: 100px;
-        } */
+                        margin-top: 100px;
+                    } */
 
-        .swiper-slide img{
+        .swiper-slide img {
             width: 100vw;
         }
-
 
     </style>
 
@@ -68,57 +69,65 @@
 
             </div>
             <div id="rightmaue">
-                <div id="top_maue" data-aos="fade-left">
-                    <div id="lasthover" class="mauebox textbox">
-                        <p class="title">
-                        {{$product[0]->className}}
-                        </p>
+                <a style="text-decoration: none; color:black;" href="/product/upwear">
+                    <div id="top_maue" data-aos="fade-left">
+                        <div id="lasthover" class="mauebox textbox">
+                            <p class="title">
+                                {{ $product[0]->className }}
+                            </p>
 
-                        <hr class="bottomline">
-                        <p>
-                            最時尚潮流的穿搭
-                        </p>
-                    </div>
-                    <div id="photo1" class="mauebox flow">
-                        <img class="photobox" src="{{$product[0]->productType[0]->product[0]->productMainImg[0]->imageUrl}}" alt=""
-                            width="100%" height="100%">
+                            <hr class="bottomline">
+                            <p>
+                                最時尚潮流的穿搭
+                            </p>
+                        </div>
+                        <div id="photo1" class="mauebox flow">
+                            <img class="photobox"
+                                src="{{ $product[0]->productType[0]->product[0]->productMainImg[0]->imageUrl }}" alt=""
+                                width="100%" height="100%">
 
+                        </div>
                     </div>
-                </div>
-                <div id="middle_maue" data-aos="fade-right">
+                </a>
+                <a style="text-decoration: none; color:black;" href="/product/pants">
+                    <div id="middle_maue" data-aos="fade-right">
 
-                    <div class="mauebox textbox">
-                        <p class="title">
-                            {{$product[1]->className}}
-                        </p>
+                        <div class="mauebox textbox">
+                            <p class="title">
+                                {{ $product[1]->className }}
+                            </p>
 
-                        <hr class="bottomline">
-                        <p>
-                            最時尚潮流的穿搭
-                        </p>
+                            <hr class="bottomline">
+                            <p>
+                                最時尚潮流的穿搭
+                            </p>
+                        </div>
+                        <div id="photo2" class="mauebox flow">
+                            <img class="photobox"
+                                src="{{ $product[1]->productType[0]->product[0]->productMainImg[0]->imageUrl }}" alt=""
+                                width="100%" height="100%">
+                        </div>
                     </div>
-                    <div id="photo2" class="mauebox flow">
-                        <img class="photobox" src="{{$product[1]->productType[0]->product[0]->productMainImg[0]->imageUrl}}" alt=""
-                            width="100%" height="100%">
-                    </div>
-                </div>
-                <div id="bottom_maue" data-aos="fade-left">
-                    <div class="mauebox textbox">
-                        <p class="title">
-                            {{$product[2]->className}}
-                        </p>
+                </a>
+                <a style="text-decoration: none; color:black;" href="/product/sox">
+                    <div id="bottom_maue" data-aos="fade-left">
+                        <div class="mauebox textbox">
+                            <p class="title">
+                                {{ $product[2]->className }}
+                            </p>
 
-                        <hr class="bottomline">
-                        <p>
-                            最時尚潮流的穿搭
-                        </p>
+                            <hr class="bottomline">
+                            <p>
+                                最時尚潮流的穿搭
+                            </p>
+                        </div>
+                        <div id="photo3" class="mauebox flow">
+                            <img class="photobox"
+                                src="{{ $product[2]->productType[0]->product[0]->productMainImg[0]->imageUrl }}" alt=""
+                                width="100%" height="100%">
+                        </div>
                     </div>
-                    <div id="photo3" class="mauebox flow">
-                        <img class="photobox" src="{{$product[2]->productType[0]->product[0]->productMainImg[0]->imageUrl}}" alt=""
-                            width="100%" height="100%">
-                    </div>
-                </div>
-
+                </a>
             </div>
         </div>
     </div>
@@ -127,30 +136,36 @@
 
         <div id="sectioncard">
             <div class="leftbox" data-aos="zoom-in">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{$sport[0]->productMainImg[0]->imageUrl}}"
-                        class="card-img-top width=100% height=100%" alt="...">
-                    <div class="card-body">
-                        <p class="card-text JQ">{{$sport[0]->content}}</p>
+                <a style="text-decoration: none; color:black;" href="/product/cloth/121">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ $sport[0]->productMainImg[0]->imageUrl }}" class="card-img-top width=100% height=100%"
+                            alt="...">
+                        <div class="card-body">
+                            <p class="card-text JQ">{{ $sport[0]->content }}</p>
+                        </div>
+
                     </div>
+                </a>
+                <a style="text-decoration: none; color:black;" href="/product/cloth/127">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ $sport[1]->productMainImg[0]->imageUrl }}" class="card-img-top mb-2" alt="...">
 
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="{{$sport[1]->productMainImg[0]->imageUrl}}" class="card-img-top mb-2" alt="...">
+                        <div class="card-body">
 
-                    <div class="card-body">
+                            <p class="card-text JQ">{{ $sport[1]->content }}</p>
+                        </div>
 
-                        <p class="card-text JQ">{{$sport[1]->content}}</p>
                     </div>
+                </a>
+                <a style="text-decoration: none; color:black;" href="/product/cloth/117">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ $sport[2]->productMainImg[0]->imageUrl }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text JQ">{{ $sport[2]->content }}</p>
+                        </div>
 
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="{{$sport[2]->productMainImg[0]->imageUrl}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text JQ">{{$sport[2]->content}}</p>
                     </div>
-
-                </div>
+                </a>
             </div>
             <div class="parallax"></div>
 
@@ -179,35 +194,41 @@
 
             <div id="bigcard">
                 <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <img src=@if($news[0]->listImageUrl==null) '/upload/news/16032882732723d092b63885e0d7c260cc007e8b9d.jpg' @else {{$news[0]->listImageUrl}} @endif class="card-img-top" alt="...">
+                    <img src=@if ($news[0]->listImageUrl == null)
+                '/upload/news/16032882732723d092b63885e0d7c260cc007e8b9d.jpg' @else {{ $news[0]->listImageUrl }}
+                    @endif class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">{{$news[0]->title}}</h5>
-                        <p class="card-text JQ">{{$news[0]->content}}</p>
+                        <h5 class="card-title">{{ $news[0]->title }}</h5>
+                        <p class="card-text JQ">{!! $news[0]->content !!}</p>
                         <div class="bottom_text ">
-                            <div class="card_date">{{$news[0]->date}}</div>
-                            <a href="#" class="btn btn-primary">MORE</a>
+                            <div class="card_date">{{ $news[0]->date }}</div>
+                            <a href="/news/Info/{{$news[0]->id}}" class="btn btn-primary">MORE</a>
                         </div>
                     </div>
                 </div>
                 <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <img src=@if($news[1]->listImageUrl==null) '/upload/news/16032882732723d092b63885e0d7c260cc007e8b9d.jpg' @else {{$news[1]->listImageUrl}} @endif class="card-img-top" alt="...">
+                    <img src=@if ($news[1]->listImageUrl == null)
+                '/upload/news/16032882732723d092b63885e0d7c260cc007e8b9d.jpg' @else {{ $news[1]->listImageUrl }}
+                    @endif class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">{{$news[1]->title}}</h5>
-                        <p class="card-text JQ">{{$news[1]->content}}</p>
+                        <h5 class="card-title">{{ $news[1]->title }}</h5>
+                        <p class="card-text JQ">{!! $news[1]->content !!}</p>
                         <div class="bottom_text">
-                            <div class="card_date">{{$news[1]->date}}</div>
-                            <a href="#" class="btn btn-primary">MORE</a>
+                            <div class="card_date">{{ $news[1]->date }}</div>
+                        <a href="/news/Info/{{$news[1]->id}}" class="btn btn-primary">MORE</a>
                         </div>
                     </div>
                 </div>
                 <div class="card" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <img src=@if($news[2]->listImageUrl==null) '/upload/news/16032882732723d092b63885e0d7c260cc007e8b9d.jpg' @else {{$news[2]->listImageUrl}} @endif class="card-img-top" alt="...">
+                    <img src=@if ($news[2]->listImageUrl == null)
+                '/upload/news/16032882732723d092b63885e0d7c260cc007e8b9d.jpg' @else {{ $news[2]->listImageUrl }}
+                    @endif class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">{{$news[2]->title}}</h5>
-                        <p class="card-text JQ">{{$news[2]->content}}</p>
+                        <h5 class="card-title">{{ $news[2]->title }}</h5>
+                        <p class="card-text JQ">{!! $news[2]->content !!}</p>
                         <div class="bottom_text">
-                            <div class="card_date">{{$news[2]->date}}</div>
-                            <a href="#" class="btn btn-primary">MORE</a>
+                            <div class="card_date">{{ $news[2]->date }}</div>
+                            <a href="/news/Info/{{$news[2]->id}}" class="btn btn-primary">MORE</a>
                         </div>
                     </div>
                 </div>
@@ -261,8 +282,8 @@
                         </div>
                         <div class="col-lg-4 col-12 m-auto">
                             <div class="top_title">
-                                <p id="aboutus_title1">我們的堅持</p>
-                                <p id="aboutus_subtitle" style="text-align: left;">堅持100% 台灣製造，台灣紡織技術為世界之最 ! ! !
+                                <p id="aboutus_title1" style="color:white">我們的堅持</p>
+                                <p id="aboutus_subtitle" style="text-align: left;color: white;">堅持100% 台灣製造，台灣紡織技術為世界之最 ! ! !
 
                                     近年各大廠牌服飾皆在中國、越南、柬埔寨設廠，便宜成本的背後，除了做工品質極度不穩定之外，大量的剝削與血汗案例更不勝枚舉，這也是Notorious堅持在台灣本土生產的主要原因。比起剝削勞工壓低成本提高利潤，我們更希望為台灣成衣業貢獻一番心力，使台灣成衣業界可以不斷成長。我們更願意讓所有人，能夠不用花大錢，就可享受高品質，高CP值的運動服飾。
                                 </p>
@@ -279,8 +300,8 @@
                     <div class="row">
                         <div class="col-lg-4 col-12 m-auto order-1 order-lg-0 px-sm-2">
                             <div class="bottom_title ">
-                                <p id="aboutus_title2">我們的信念</p>
-                                <p id="aboutus_subtitle2">以品牌創始人 館長 ‒
+                                <p id="aboutus_title2" style="color:white">我們的信念</p>
+                                <p id="aboutus_subtitle2" style="color:white">以品牌創始人 館長 ‒
                                     陳之漢的勇敢、堅毅、不服輸且拒絕向逆境低頭的個性為品牌宗旨，使得穿搭者只要穿上Notorious，也能深刻感受到本品牌所傳遞的信念。
 
                                     有夢想的人，總是招人妒忌的
@@ -315,10 +336,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="/js/index/nav.js"></script>
 
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> --}}
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js">
+    </script> --}}
 
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-                    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+                                <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
 
     {{-- <script src="./js/nav.js"></script> --}}
 
