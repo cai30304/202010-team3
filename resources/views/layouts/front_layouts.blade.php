@@ -130,13 +130,14 @@
                 <div id="leftfooter_content">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-sm-2 whitecolor offset-lg-1 text-nowrap"><a href=""
-                                    style="color:white">保固與服務</a></div>
-                            <div class="col-sm-2 whitecolor text-nowrap"><a href="" style="color:white">退換貨相關</a></div>
-                            <div class="col-sm-3 whitecolor text-nowrap"><a href="" style="color:white">尋找或購買商品</a>
-                            </div>
-                            <div class="col-sm-1 whitecolor text-nowrap"><a href="" style="color:white">其他</a></div>
-                            <div class="col-sm-2 whitecolor text-nowrap"><a href="" style="color:white">聯絡我們</a></div>
+                            <div class="col-sm-2 whitecolor offset-lg-1 text-nowrap"><a href="https://notorious-2019.com/clause.aspx?id=6" target="_blank"
+                                    style="color:white">預購相關規章</a></div>
+                                    <div class="col-sm-3 whitecolor text-nowrap"><a href="https://notorious-2019.com/clause.aspx?id=66" target="_blank" style="color:white">購物須知</a>
+                                    </div>
+                            <div class="col-sm-2 whitecolor text-nowrap"><a href="https://notorious-2019.com/clause.aspx?id=5" target="_blank" style="color:white">退換貨政策</a></div>
+
+                            <div class="col-sm-1 whitecolor text-nowrap"><a href="https://notorious-2019.com/clause.aspx?id=12" target="_blank" style="color:white">隱私條款</a></div>
+                            <div class="col-sm-2 whitecolor text-nowrap"><a href="/contacts" style="color:white">聯絡我們</a></div>
 
                         </div>
 
