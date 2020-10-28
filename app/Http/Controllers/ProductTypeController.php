@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\ProductClass;
-use App\ProductMainClass;
+// use App\ProductMainClass;
 use Illuminate\Http\Request;
 
 use App\ProductType;
