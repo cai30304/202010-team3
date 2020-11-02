@@ -34,7 +34,7 @@
                     </div>
                     <div id="nav_logo" class="col-2 offset-xl-4 offset-lg-2"></div>
                     <div id="buycar" class="col-1 offset-xl-1">
-                        <a href=""><img src="/images/index/shopping-cart.png" alt="" id="buycar_img"></a>
+                        <a href="/cart"><img src="/images/index/shopping-cart.png" alt="" id="buycar_img"></a>
                     </div>
                     <div id="nav_contact" class="col-md-2 col-xl-1 text-nowrap">
                         <a href="/contacts" style="color:white">聯絡我們</a>

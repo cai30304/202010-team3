@@ -5,16 +5,25 @@ namespace App\Http\Controllers;
 use App\Products;
 use Illuminate\Http\Request;
 use Darryldecode\Cart\Cart;
+use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
     public function cart()
     {
-        $userId = auth()->user()->id;
-        $cart_items = \Cart::session($userId)->getContent()->sort();
-        $total_price = \Cart::session($userId)->getTotal();
+        if(Auth::check()){
+            $userId = auth()->user()->id;
 
-        return view('front.cart',compact('cart_items','total_price'));
+            // dd($userId);
+
+            $cart_items = \Cart::session($userId)->getContent()->sort();
+            $total_price = \Cart::session($userId)->getTotal();
+
+            return view('front.cart',compact('cart_items','total_price'));
+            // return view('front.cart');
+        }else{
+            return '#portfolio-member';
+        }
     }
 
     public function checkout()

@@ -41,6 +41,13 @@ Route::get('/contacts', 'FrontController@contacts');
 Route::post('/contacts/store', 'FrontController@contacts_store');
 
 
+//cart
+Route::get('/cart','CartController@cart'); //購物車頁
+Route::get('checkout','CartController@checkout'); //結帳頁 - 填寫付款方式,收件人資料
+Route::post('/addcart','CartController@addcart'); //一個產品加入購物車
+Route::post('/changeProductQty','CartController@changeProductQty'); //於結帳頁修改產品數量
+Route::post('/deleteProductInCart','CartController@deleteProductInCart'); //於結帳頁刪除產品
+
 
 
 ////後端控制器////
@@ -118,13 +125,6 @@ Route::prefix('admin')->middleware(['auth'])->group(function(){
     //summernote
     Route::post('/ajax_upload_img','AdminController@ajax_upload_img');
     Route::post('/ajax_delete_img','AdminController@ajax_delete_img');
-
-    //cart
-    Route::get('cart','CartController@cart'); //購物車頁
-    Route::get('checkout','CartController@checkout'); //結帳頁 - 填寫付款方式,收件人資料
-    Route::post('/addcart','CartController@addcart'); //一個產品加入購物車
-    Route::post('/changeProductQty','CartController@changeProductQty'); //於結帳頁修改產品數量
-    Route::post('/deleteProductInCart','CartController@deleteProductInCart'); //於結帳頁刪除產品
 
 
 });

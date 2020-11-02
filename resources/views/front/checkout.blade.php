@@ -1,4 +1,4 @@
-@extends('layouts/nav_footer')
+@extends('layouts/front_layouts')
 
 @section('css')
 <link rel="stylesheet" href="/css/news.css">
@@ -130,7 +130,7 @@
 </style>
 @endsection
 
-@section('content')
+@section('main')
 
 <section class="news">
     <div class="container">
