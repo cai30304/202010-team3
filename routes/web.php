@@ -16,7 +16,7 @@
 // });
 
 ////前端控制器////
-Route::get('/', 'FrontController@index');
+Route::get('/test', 'FrontController@index');
 
 Route::get('/test/layouts', 'FrontController@layouts');
 
