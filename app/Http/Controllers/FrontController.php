@@ -41,7 +41,7 @@ class FrontController extends Controller
 
         // dd($sport_all);
 
-        return view('front.index', compact('banners', 'product', 'sport', 'news'));
+        return view('front.hello_world', compact('banners', 'product', 'sport', 'news'));
     }
 
     public function news()
