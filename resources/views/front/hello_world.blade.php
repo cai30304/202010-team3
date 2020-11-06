@@ -1,4 +1,4 @@
-{{-- @extends('layouts/front_layouts') --}}
+@extends('layouts/5566')
 
 @section('css')
 
