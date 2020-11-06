@@ -18,45 +18,45 @@
 ////前端控制器////
 Route::get('/', 'FrontController@index');
 
-Route::get('/layouts', 'FrontController@layouts');
+Route::get('/test/layouts', 'FrontController@layouts');
 
-Route::get('/news', 'FrontController@news');
+Route::get('/test/news', 'FrontController@news');
 
-Route::get('/news/Info/{id}', 'FrontController@newsInfo');
+Route::get('/test/news/Info/{id}', 'FrontController@newsInfo');
 
-Route::get('/product/cloth', 'FrontController@cloth');
+Route::get('/test/product/cloth', 'FrontController@cloth');
 
-Route::get('/product/cloth/{id}', 'FrontController@clothInfo');
+Route::get('/test/product/cloth/{id}', 'FrontController@clothInfo');
 
-Route::get('/product/upwear', 'FrontController@upwear');
-Route::get('/product/pants', 'FrontController@pants');
-Route::get('/product/sox', 'FrontController@sox');
+Route::get('/test/product/upwear', 'FrontController@upwear');
+Route::get('/test/product/pants', 'FrontController@pants');
+Route::get('/test/product/sox', 'FrontController@sox');
 
-Route::get('/product/sport', 'FrontController@sport');
+Route::get('/test/product/sport', 'FrontController@sport');
 
-Route::get('/product/sport/{id}', 'FrontController@sportInfo');
+Route::get('/test/product/sport/{id}', 'FrontController@sportInfo');
 
-Route::get('/contacts', 'FrontController@contacts');
+Route::get('/test/contacts', 'FrontController@contacts');
 
-Route::post('/contacts/store', 'FrontController@contacts_store');
+Route::post('/test/contacts/store', 'FrontController@contacts_store');
 
 
 //cart
-Route::get('/cart','CartController@cart'); //購物車頁
-Route::get('checkout','CartController@checkout'); //結帳頁 - 填寫付款方式,收件人資料
-Route::post('/addcart','CartController@addcart'); //一個產品加入購物車
-Route::post('/changeProductQty','CartController@changeProductQty'); //於結帳頁修改產品數量
-Route::post('/deleteProductInCart','CartController@deleteProductInCart'); //於結帳頁刪除產品
+Route::get('/test/cart','CartController@cart'); //購物車頁
+Route::get('/test/checkout','CartController@checkout'); //結帳頁 - 填寫付款方式,收件人資料
+Route::post('/test/addcart','CartController@addcart'); //一個產品加入購物車
+Route::post('/test/changeProductQty','CartController@changeProductQty'); //於結帳頁修改產品數量
+Route::post('/test/deleteProductInCart','CartController@deleteProductInCart'); //於結帳頁刪除產品
 
 
 
 ////後端控制器////
 Auth::routes(['register' => false, 'reset' =>false, 'verify' =>false]);
 
-Route::get('/admin', 'HomeController@index')->name('home');
+Route::get('/test/admin', 'HomeController@index')->name('home');
 
 
-Route::prefix('admin')->middleware(['auth'])->group(function(){
+Route::prefix('/test/admin')->middleware(['auth'])->group(function(){
 
     //Banner管理
     Route::get('banners', 'BannerController@index');
