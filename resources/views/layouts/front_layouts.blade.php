@@ -7,7 +7,7 @@
     {{-- <title>Document</title> --}}
 
 
-    <link rel="shortcut icon" href="https://notorious-2019.com/favicon.ico" >
+    <link rel="shortcut icon" href="https://notorious-2019.com/favicon.ico">
     <link rel="stylesheet" href="/css/layouts/layouts.css">
     <link rel="stylesheet" href="/css/layouts/nav.css">
     <link rel="stylesheet" href="/css/layouts/rwd.css">
@@ -130,14 +130,22 @@
                 <div id="leftfooter_content">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-sm-2 whitecolor offset-lg-1 text-nowrap"><a href="https://notorious-2019.com/clause.aspx?id=6" target="_blank"
+                            <div class="col-sm-2 whitecolor offset-lg-1 text-nowrap"><a
+                                    href="https://notorious-2019.com/clause.aspx?id=6" target="_blank"
                                     style="color:white">預購相關規章</a></div>
-                                    <div class="col-sm-3 whitecolor text-nowrap"><a href="https://notorious-2019.com/clause.aspx?id=66" target="_blank" style="color:white">購物須知</a>
-                                    </div>
-                            <div class="col-sm-2 whitecolor text-nowrap"><a href="https://notorious-2019.com/clause.aspx?id=5" target="_blank" style="color:white">退換貨政策</a></div>
+                            <div class="col-sm-3 whitecolor text-nowrap"><a
+                                    href="https://notorious-2019.com/clause.aspx?id=66" target="_blank"
+                                    style="color:white">購物須知</a>
+                            </div>
+                            <div class="col-sm-2 whitecolor text-nowrap"><a
+                                    href="https://notorious-2019.com/clause.aspx?id=5" target="_blank"
+                                    style="color:white">退換貨政策</a></div>
 
-                            <div class="col-sm-1 whitecolor text-nowrap"><a href="https://notorious-2019.com/clause.aspx?id=12" target="_blank" style="color:white">隱私條款</a></div>
-                            <div class="col-sm-2 whitecolor text-nowrap"><a href="/contacts" style="color:white">聯絡我們</a></div>
+                            <div class="col-sm-1 whitecolor text-nowrap"><a
+                                    href="https://notorious-2019.com/clause.aspx?id=12" target="_blank"
+                                    style="color:white">隱私條款</a></div>
+                            <div class="col-sm-2 whitecolor text-nowrap"><a href="/contacts"
+                                    style="color:white">聯絡我們</a></div>
 
                         </div>
 
@@ -197,9 +205,11 @@
             <a href="#portfolio" class="close"></a>
             <h3 class="portfolio__title">會員登入</h3>
             <p class="portfolio__body">
-                {{-- <a href="{{ route('login') }}">Login</a> --}}
+                {{-- <a href="{{ route('login') }}">Login</a>
+                --}}
             <div class="login-form">
-                {{-- <form action="{{ route('login') }}" class="form-horizontal" method="POST">
+                {{-- <form action="{{ route('login') }}" class="form-horizontal"
+                    method="POST">
                     @csrf
                     <input type="hidden" name="act" value="act_login">
                     <div class="form-group">
@@ -235,10 +245,13 @@
                     @csrf
 
                     <div class="form-group row">
-                        <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                        <label for="email"
+                            class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                         <div class="col-md-6">
-                            <input id="email" type="email" placeholder="請輸入帳號(Email)" class="form-control  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            <input id="email" type="email" placeholder="請輸入帳號(Email)"
+                                class="form-control  @error('email') is-invalid @enderror" name="email"
+                                value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -252,7 +265,9 @@
                         <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                         <div class="col-md-6">
-                            <input id="password" placeholder="請輸入密碼" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                            <input id="password" placeholder="請輸入密碼" type="password"
+                                class="form-control @error('password') is-invalid @enderror" name="password" required
+                                autocomplete="current-password">
 
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -265,7 +280,8 @@
                     <div class="form-group row">
                         <div class="col-md-6 offset-md-4">
                             {{-- <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                <input class="form-check-input" type="checkbox" name="remember" id="remember"
+                                    {{ old('remember') ? 'checked' : '' }}>
 
                                 <label class="form-check-label" for="remember">
                                     {{ __('Remember Me') }}記住我
